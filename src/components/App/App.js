@@ -5,6 +5,7 @@ import Playlist from "../Playlist/Playlist";
 import SearchBar from "../SearchBar/SearchBar";
 import SearchResults from "../SearchResults/SearchResults";
 import Spotify from "../../util/Spotify";
+import icon from "./icon.png";
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -48,7 +49,7 @@ const App = () => {
       {/* <h1>
         Ja<span className="highlight">mmm</span>ing
       </h1> */}
-      <h1>Spotify Studio</h1>
+      <h1>Spotify <span className="icon"><img src={icon} alt="spotify icon"/></span> Studio</h1>
       <div className="App">
         <SearchBar onSearch={search} />
         <div className="App-playlist">
