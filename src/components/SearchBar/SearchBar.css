@@ -9,7 +9,9 @@
   .SearchBar input {
     width: 287px;
     padding: .88rem 0;
-    border: 1px solid #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
     border-radius: 3px;
     margin-bottom: 2.22rem;
     color: #010c3f;
@@ -18,6 +20,7 @@
   }
   
   .SearchBar input:focus {
+    color: white;
     outline: none;
   }
   
